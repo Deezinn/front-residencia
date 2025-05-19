@@ -1,8 +1,8 @@
 import Image from "next/image";
-import MainPage from "./main/page"
+import Sidebar from "../components/sidebar";
 
 export default function Home() {
   return (
-    <MainPage/>
+   <Sidebar/>
   );
 }
