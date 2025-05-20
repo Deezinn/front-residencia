@@ -8,7 +8,7 @@ export default function Sidebar() {
         <link rel="stylesheet" href="/" />
         <img className="w-70 h-auto mt-10" src="https://di2win-site.b-cdn.net/wp-content/uploads/2024/05/cropped-logo-completa-preto.png" alt="di2win-logo" />
       </div>
-      <div className="flex flex-col">
+      <div className="flex flex-col items-center">
       <Button/>
       </div>
     </div>

@@ -6,7 +6,7 @@ export default function Button() {
       <div>
          <button
         style={{ backgroundColor: '#c10075' }}
-        className="shadow-md active:shadow-inner active:translate-y-2 duration-200 rounded-sm w-52 h-14 flex items-center justify-items-start"
+        className="shadow-md active:shadow-inner active:translate-y-2 duration-200 rounded-xl w-52 h-14 flex items-center justify-items-start"
       >
         <img
           src="https://cdn-icons-png.flaticon.com/128/7781/7781587.png"
@@ -19,7 +19,7 @@ export default function Button() {
       <div className='mt-3'>
          <button
         style={{ backgroundColor: '#c10075' }}
-        className="shadow-md active:shadow-inner active:translate-y-2 duration-200 rounded-sm w-52 h-14 flex items-center justify-items-start"
+        className="shadow-md active:shadow-inner active:translate-y-2 duration-200 rounded-xl w-52 h-14 flex items-center justify-items-start"
       >
         <img
           src="https://cdn-icons-png.flaticon.com/128/1038/1038247.png"
