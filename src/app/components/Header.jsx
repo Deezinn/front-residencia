@@ -2,7 +2,7 @@ import { UserRound } from "lucide-react";
 
 export default function Header() {
   return (
-    <header className="w-full p-3 flex justify-between items-center">
+    <header className="w-full p-3 flex justify-between items-center shadow-md/10 bg-slate-100 dark:bg-zinc-400">
       <img
         src="https://di2win-site.b-cdn.net/wp-content/uploads/2024/05/cropped-logo-completa-preto.png"
         alt="di2win-logo"
