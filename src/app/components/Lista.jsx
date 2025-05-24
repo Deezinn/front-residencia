@@ -56,7 +56,7 @@ export default function Lista() {
 
   return (
     <table className="w-3xl border-2 border-black border-separate border-spacing-0 rounded-md overflow-hidden">
-      <thead className="bg-pink-fraco">
+      <thead className="bg-pink-fraco dark:bg-pink-800">
         <tr className="border-b-2 border-black">
           <th className="p-1 text-gray-800">ID</th>
           <th className="p-1 text-gray-800">Data e Hora</th>
