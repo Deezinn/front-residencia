@@ -7,6 +7,5 @@ export default function Home() {
     <div className="bg-zinc-300 p-5 rounded-sm dark:bg-gray-600">
       <Lista />
     </div>
-  //  <Sidebar/>
   );
 }
