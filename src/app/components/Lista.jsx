@@ -63,20 +63,20 @@ export default function Lista() {
   const listErrors = erros.map((erro, index) => (
     <tr
       key={erro.id || index}
-      className="odd:bg-zinc-100 even:bg-zinc-300 border-b-2 border-black"
+      className="odd:bg-pink-100 even:bg-pink-200 dark:odd:bg-pink-200 dark:even:bg-pink-300 text-zinc-800 border-b-2 border-black"
     >
-      <td className="p-1 text-center text-zinc-800 select-none">{erro.id}</td>
-      <td className="p-1 text-center text-zinc-800 select-none">
+      <td className="p-1 text-center select-none">{erro.id}</td>
+      <td className="p-1 text-center select-none">
         {erro.codigo}
       </td>
-      <td className="p-1 text-center text-zinc-800 select-none">{erro.guid}</td>
-      <td className="p-1 text-center text-zinc-800 select-none">
+      <td className="p-1 text-center select-none">{erro.guid}</td>
+      <td className="p-1 text-center select-none">
         {erro.dataHora}
       </td>
-      <td className="p-1 text-center text-zinc-800 select-none">
+      <td className="p-1 text-center select-none">
         {erro.modelo}
       </td>
-      <td className="p-1 text-center text-zinc-800 select-none">
+      <td className="p-1 text-center select-none">
         {erro.mensagem}
       </td>
     </tr>
@@ -84,14 +84,14 @@ export default function Lista() {
 
   return (
     <table className="w-3xl border-2 border-black border-separate border-spacing-0 rounded-md overflow-hidden">
-      <thead className="bg-pink-fraco dark:bg-pink-800">
-        <tr className="border-b-2 border-black">
-          <th className="px-3 py-2 text-gray-800">ID</th>
-          <th className="px-3 py-2 text-gray-800">Código</th>
-          <th className="px-3 py-2 text-gray-800">guid</th>
-          <th className="px-3 py-2 text-gray-800">Data e Hora</th>
-          <th className="px-3 py-2 text-gray-800">Modelo</th>
-          <th className="px-3 py-2 text-gray-800">Mensagem</th>
+      <thead className="bg-pink-500 dark:bg-pink-600">
+        <tr className="border-b-2 text-gray-200 dark:text-gray-900 border-black">
+          <th className="px-3 py-2">ID</th>
+          <th className="px-3 py-2">Código</th>
+          <th className="px-3 py-2">GUID</th>
+          <th className="px-3 py-2">Data e Hora</th>
+          <th className="px-3 py-2">Modelo</th>
+          <th className="px-3 py-2">Mensagem</th>
         </tr>
       </thead>
       <tbody>{listErrors}</tbody>
