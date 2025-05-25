@@ -1,10 +1,10 @@
-import { Kantumruy_Pro } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import Header from "./components/Header";
 import Sidebar from "./components/sidebar";
 import "./globals.css";
 
-const kantumruyPro = Kantumruy_Pro({
-  variable: "--font-kantumruy-pro",
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
   subsets: ["latin"],
 });
 
@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${kantumruyPro.variable} antialiased`}
+        className={`${montserrat.variable} antialiased`}
       >
         <Header />
         <div className="container-geral flex">

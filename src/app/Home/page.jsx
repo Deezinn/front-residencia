@@ -19,6 +19,5 @@ export default function Home() {
       </div>
       <Lista />
     </div>
-    //  <Sidebar/>
   );
 }
