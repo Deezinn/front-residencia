@@ -3,7 +3,7 @@ import Button from "./button";
 export default function Sidebar() {
   return (
    <>
-    <div className="bg-gray-200 shadow-2xl w-[250px] h-[100vh] transition-[margin-left] ease-in-out duration-500 fixed md:static top-0 bottom-0 left-0 z-40" >
+    <div className="bg-gray-200 shadow-md/10 w-[250px] h-[100vh] transition-[margin-left] ease-in-out duration-500 fixed md:static top-0 bottom-0 left-0 z-40" >
       <div className="p-2 flex">
         <link rel="stylesheet" href="/" />
       </div>
