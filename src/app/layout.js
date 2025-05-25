@@ -1,13 +1,10 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Kantumruy_Pro } from "next/font/google";
+import Header from "./components/Header";
+import Sidebar from "./components/sidebar";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const kantumruyPro = Kantumruy_Pro({
+  variable: "--font-kantumruy-pro",
   subsets: ["latin"],
 });
 
@@ -20,9 +17,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${kantumruyPro.variable} antialiased`}
       >
-        {children}
+        <Header />
+        <div className="container-geral flex">
+          <Sidebar />
+          <main>{children}</main>
+        </div>
       </body>
     </html>
   );
