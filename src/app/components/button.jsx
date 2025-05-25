@@ -1,34 +1,23 @@
-import dashboard from '@/assets/img/dashboard.png';
+'use client'
+import { useState } from "react";
 
 export default function Button() {
+  const [activeButton, setActiveButton] = useState('painel');
+
   return (
-    <div className="flex flex-col items-center mt-20 space-y-1">
-      <div>
-         <button
-        style={{ backgroundColor: '#c10075' }}
-        className="shadow-md active:shadow-inner active:translate-y-2 duration-200 rounded-xl w-52 h-14 flex items-center justify-items-start"
-      >
-        <img
-          src="https://cdn-icons-png.flaticon.com/128/7781/7781587.png"
-          alt="dashboard-icon"
-          className="w-6 h-auto opacity-90 ml-4"
-        />
-        <span className="ml-5 text-black font-sans">Dashboard</span>
+    <div className="space-y-4">
+      <button onClick={()=> setActiveButton("painel")}
+        className={`w-55 h-14 flex items-center justify-items-start rounded-sm ${
+          activeButton === "painel"? "bg-fuchsia-200" : "bg-gray-200"
+        }`}>
+        <span className="ml-5 text-black font-sans flex items-center justify-items-start text-fuchsia-500"> Painel Principal</span>
       </button>
-      </div>
-      <div className='mt-3'>
-         <button
-        style={{ backgroundColor: '#c10075' }}
-        className="shadow-md active:shadow-inner active:translate-y-2 duration-200 rounded-xl w-52 h-14 flex items-center justify-items-start"
-      >
-        <img
-          src="https://cdn-icons-png.flaticon.com/128/1038/1038247.png"
-          alt="dashboard-icon"
-          className="w-7 h-auto opacity-90 ml-4"
-        />
-        <span className="ml-5 text-black font-sans">Relatórios</span>
+      <button onClick={()=> setActiveButton("arquivo")}
+        className={`w-55 h-14 flex items-center justify-items-start rounded-sm ${
+          activeButton === "arquivo"? "bg-fuchsia-200" : "bg-gray-200"
+        }`}>
+        <span className="ml-5 text-black font-sans flex items-center justify-items-start text-fuchsia-500"> Enviar Arquivo</span>
       </button>
-      </div>
     </div>
   );
 }
