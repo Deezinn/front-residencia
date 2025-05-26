@@ -6,7 +6,7 @@ const erros = [
     codigo: 500,
     guid: "334-22052025-18257-83686fef-b1e9-44ac-b1e6-6dafe5cbca51",
     dataHora: "14/04/2025 20:23:30",
-    modelo: "ExtrAI Dados",
+    modelo: "cnh",
     mensagem: "Bad Request",
   },
   {
@@ -14,7 +14,7 @@ const erros = [
     codigo: 400,
     guid: "335-22052025-18257-83686fef-b1e9-44ac-b1e6-6dafe5cbca52",
     dataHora: "14/04/2025 20:32:30",
-    modelo: "ExtrAI Dados",
+    modelo: "rg",
     mensagem: "Bad Request",
   },
   {
@@ -22,7 +22,7 @@ const erros = [
     codigo: 404,
     guid: "336-22052025-18257-83686fef-b1e9-44ac-b1e6-6dafe5cbca53",
     dataHora: "14/04/2025 20:42:30",
-    modelo: "ExtrAI Dados",
+    modelo: "boleto",
     mensagem: "Not Found",
   },
   {
@@ -30,7 +30,7 @@ const erros = [
     codigo: 500,
     guid: "337-22052025-18257-83686fef-b1e9-44ac-b1e6-6dafe5cbca54",
     dataHora: "14/04/2025 20:52:30",
-    modelo: "ExtrAI Dados",
+    modelo: "certidao_nascimento",
     mensagem: "Internal Server Error",
   },
   {
@@ -38,7 +38,7 @@ const erros = [
     codigo: 400,
     guid: "338-22052025-18257-83686fef-b1e9-44ac-b1e6-6dafe5cbca55",
     dataHora: "14/04/2025 21:02:30",
-    modelo: "ExtrAI Dados",
+    modelo: "rg",
     mensagem: "Bad Request",
   },
   {
@@ -46,7 +46,7 @@ const erros = [
     codigo: 404,
     guid: "339-22052025-18257-83686fef-b1e9-44ac-b1e6-6dafe5cbca56",
     dataHora: "14/04/2025 21:12:30",
-    modelo: "ExtrAI Dados",
+    modelo: "diploma",
     mensagem: "Not Found",
   },
   {
@@ -54,7 +54,7 @@ const erros = [
     codigo: 500,
     guid: "340-22052025-18257-83686fef-b1e9-44ac-b1e6-6dafe5cbca57",
     dataHora: "14/04/2025 21:22:30",
-    modelo: "ExtrAI Dados",
+    modelo: "cnh",
     mensagem: "Internal Server Error",
   },
 ];
@@ -83,9 +83,9 @@ export default function Lista() {
   ));
 
   return (
-    <table className="w-3xl border-2 border-black border-separate border-spacing-0 rounded-md overflow-hidden">
+    <table className="w-4xl border-2 border-black border-separate border-spacing-0 rounded-md overflow-hidden">
       <thead className="bg-pink-500 dark:bg-pink-600">
-        <tr className="border-b-2 text-gray-200 dark:text-gray-900 border-black">
+        <tr className="border-b-2 text-gray-100 dark:text-gray-900 border-black">
           <th className="px-3 py-2">ID</th>
           <th className="px-3 py-2">Código</th>
           <th className="px-3 py-2">GUID</th>
