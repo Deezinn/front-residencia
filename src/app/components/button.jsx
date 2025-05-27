@@ -13,7 +13,7 @@ export default function Button() {
         className={`w-55 h-14 flex items-center justify-items-start rounded-sm cursor-pointer ${
           activeButton === "painel"
             ? "bg-fuchsia-200 text-fuchsia-500 hover:bg-[#f3bffc]"
-            : "bg-gray-200 text-zinc-500"
+            : "dark:bg-side-cont-dark dark:text-zinc-100 text-zinc-500"
         }`}
       >
         <span className="ml-5 font-sans flex items-center justify-items-start">
@@ -27,7 +27,7 @@ export default function Button() {
         className={`w-55 h-14 flex items-center justify-items-start rounded-sm cursor-pointer ${
           activeButton === "relatorio"
             ? "bg-fuchsia-200 text-fuchsia-500 hover:bg-[#f3bffc]"
-            : "bg-gray-200 text-zinc-500"
+            : "dark:bg-side-cont-dark dark:text-zinc-100 text-zinc-500"
         }`}
       >
         <span className="ml-5 font-sans flex items-center justify-items-start">

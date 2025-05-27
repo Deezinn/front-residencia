@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${montserrat.variable} antialiased`}>
         <Header />
-        <div className="container-geral flex">
+        <div className="container-geral flex relative z-10">
           <Sidebar />
           <main className="flex flex-1 items-center justify-center">
             <div className="bg-zinc-200 p-5 rounded-sm dark:bg-gray-600">
