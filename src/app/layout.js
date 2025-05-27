@@ -16,13 +16,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${montserrat.variable} antialiased`}
-      >
+      <body className={`${montserrat.variable} antialiased`}>
         <Header />
         <div className="container-geral flex">
           <Sidebar />
-          <main className="flex flex-1 items-center justify-center">{children}</main>
+          <main className="flex flex-1 items-center justify-center">
+            <div className="bg-zinc-200 p-5 rounded-sm dark:bg-gray-600">
+              {children}
+            </div>
+          </main>
         </div>
       </body>
     </html>
