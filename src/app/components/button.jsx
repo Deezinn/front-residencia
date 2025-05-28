@@ -18,6 +18,20 @@ export default function Button() {
       >
         <span className="ml-5 font-sans flex items-center justify-items-start">
           {" "}
+          Página Inicial
+        </span>
+      </Link>
+      <Link
+        href="/enviar"
+        onClick={() => setActiveButton("painel")}
+        className={`w-55 h-14 flex items-center justify-items-start rounded-sm cursor-pointer ${
+          activeButton === "painel"
+            ? "bg-fuchsia-200 text-fuchsia-500 hover:bg-[#f3bffc]"
+            : "dark:bg-side-cont-dark dark:text-zinc-100 text-zinc-500"
+        }`}
+      >
+        <span className="ml-5 font-sans flex items-center justify-items-start">
+          {" "}
           Enviar Arquivo
         </span>
       </Link>
