@@ -26,7 +26,7 @@ export default function Lista() {
   ));
 
   return (
-    <table className="w-4xl border-2 border-black border-separate border-spacing-0 rounded-md overflow-hidden">
+    <table className="border-2 border-black border-separate border-spacing-0 rounded-md overflow-hidden w-full">
       <thead className="bg-pink-500 dark:bg-pink-600">
         <tr className="border-b-2 text-gray-100 dark:text-gray-900 border-black">
           <th className="px-3 py-2">ID</th>
