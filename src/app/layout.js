@@ -20,8 +20,8 @@ export default function RootLayout({ children }) {
         <Header />
         <div className="container-geral flex relative z-10">
           <Sidebar />
-          <main className="flex flex-1 items-center justify-center">
-            <div className="bg-zinc-200 p-5 rounded-sm dark:bg-gray-600">
+          <main className="flex flex-1 items-center justify-center p-16">
+            <div className="bg-zinc-200 w-full h-full rounded-sm dark:bg-side-cont-dark">
               {children}
             </div>
           </main>
