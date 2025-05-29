@@ -23,9 +23,9 @@ export default function Button() {
       </Link>
       <Link
         href="/enviar"
-        onClick={() => setActiveButton("painel")}
+        onClick={() => setActiveButton("enviar")}
         className={`w-55 h-14 flex items-center justify-items-start rounded-sm cursor-pointer ${
-          activeButton === "painel"
+          activeButton === "enviar"
             ? "bg-fuchsia-200 text-fuchsia-500 hover:bg-[#f3bffc]"
             : "dark:bg-side-cont-dark dark:text-zinc-100 text-zinc-500"
         }`}
