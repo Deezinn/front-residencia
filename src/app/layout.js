@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
         <div className="container-geral flex relative z-10">
           <Sidebar />
           <main className="flex flex-1 items-center justify-center">
-            <div className="bg-zinc-200 p-5 rounded-sm dark:bg-gray-600">
+            <div className="p-5 rounded-sm dark:bg-gray-600">
               {children}
             </div>
           </main>
