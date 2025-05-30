@@ -6,7 +6,7 @@ export default function Equipe() {
             {membros.map((membro, index) => (
                 <div
                     key={index}
-                    className="flex flex-col items-center text-center bg-white rounded-2xl shadow-lg p-10 w-80"
+                    className="flex flex-col items-center text-center bg-white rounded-2xl shadow-lg hover:shadow-none transition-shadow delay-50 p-10 w-80"
                 >
                     <img
                         src={membro.imagem}
