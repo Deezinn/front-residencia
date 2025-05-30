@@ -1,7 +1,9 @@
+import Image from "next/image";
+import logo from "../assets/img/err2log.png";
 export default function Main() {
   return (
     <div className="p-20">
-      <img src="../assets/img/err2log.png" alt="Err2Log Logo" className="w-70"/>
+      <Image src={logo} alt="Err2Log Logo" className="w-80" />
       <h2 className="pl-2 text-4xl font-bold text-black">
         Registros de erro da API ExtrAI Dados
       </h2>
