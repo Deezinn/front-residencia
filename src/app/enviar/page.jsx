@@ -8,6 +8,7 @@ const option = ["CPF", "CNH"];
 
 export default function Enviar() {
   const [fileName, setFileName] = useState("");
+  const [docValue, setDocValue] = useState("");
 
   function handleFile(e) {
     const file = e.target.files?.[0];
@@ -20,6 +21,7 @@ export default function Enviar() {
         styles={`w-full `}
         disabled="Selecione o tipo de arquivo"
         options={option}
+        docValue={setDocValue}
       />
       <div className="flex items-center justify-center p-4 border-2 border-dashed border-pink-300 my-3 rounded-sm flex-col gap-3">
         <CloudUpload size="120" />
@@ -32,11 +34,12 @@ export default function Enviar() {
             id="img"
             className="hidden"
             onChange={handleFile}
+            disabled={docValue == ""}
           />
           <label
             htmlFor="img"
-            className={`px-2 py-1 rounded-sm text-zinc-100 cursor-pointer ${fileName ? "bg-pink-500" : "bg-zinc-400"
-              }`}
+            className={`px-2 py-1 rounded-sm text-zinc-100 ${fileName ? "bg-pink-500" : "bg-zinc-400"
+              } ${docValue === "" ? "cursor-not-allowed" : "cursor-pointer"}`}
           >
             {fileName ? "Trocar arquivo" : "Enviar arquivo"}
           </label>
