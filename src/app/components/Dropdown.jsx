@@ -1,7 +1,5 @@
 "use client";
 
-import { useState } from "react";
-
 export default function Dropdown({ nome, options, icon, disabled, styles, docValue }) {
   const optionsDrop = options.map((option, index) => {
     const data = option.replace(/-/g, "/");
