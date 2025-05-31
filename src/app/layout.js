@@ -16,12 +16,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
-      <body className={`${montserrat.variable} antialiased overflow-hidden`}>
+      <body className={`${montserrat.variable} antialiased`}>
         <Header />
-        <div className="flex relative z-10 h-screen">
+        <div className="flex flex-1 h-full relative z-10">
           <Sidebar />
-          <main className="flex flex-1 overflow-y-auto h-full">
-            <div className="bg-zinc-200 p-5 rounded-sm mx-auto my-7 dark:bg-gray-600 w-5/6 h-5/6">
+          <main className="flex flex-1 h-full overflow-y-auto items-center md:items-start md:py-6">
+            <div className="bg-zinc-200 p-5 rounded-sm mx-auto dark:bg-gray-600 w-5/6 h-fit">
               {children}
             </div>
           </main>
