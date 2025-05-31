@@ -46,7 +46,7 @@ export default function Enviar() {
           />
           <label
             htmlFor="img"
-            className={`px-2 py-1 rounded-sm text-zinc-100 ${fileName ? "bg-pink-500" : "bg-zinc-400"} ${docValue === "" ? "cursor-not-allowed" : "cursor-pointer"}`}
+            className={`px-2 py-1 rounded-sm text-zinc-100 ${fileName ? "bg-pink-500" : "bg-zinc-400"} ${docValue === "" ? "cursor-not-allowed opacity-70" : "cursor-pointer"}`}
           >
             {fileName ? "Trocar arquivo" : "Enviar arquivo"}
           </label>
