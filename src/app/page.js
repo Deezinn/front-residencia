@@ -14,12 +14,12 @@ export default function Main() {
       </p>
       <h3 className="text-black font-semibold text-2xl pl-2 mt-10">Repositórios:</h3>
       <div className="flex gap-4 pl-2 mt-4">
-        <button className="bg-pink-500 hover:bg-pink-600 text-white font-semibold py-2 px-3 rounded-sm transition-colors duration-200 flex items-center gap-1">
+        <a href="https://github.com/Deezinn/front-residencia" target="_blank" className="bg-pink-500 hover:bg-pink-600 text-white font-semibold py-2 px-3 rounded-sm transition-colors duration-200 flex items-center gap-1">
           <Invertocat/> Nossa API
-        </button>
-        <button className="bg-pink-500 hover:bg-pink-600 text-white font-semibold py-2 px-3 rounded-sm transition-colors duration-200 flex items-center gap-1">
+        </a>
+        <a href="https://github.com/Deezinn/front-residencia" target="_blank" className="bg-pink-500 hover:bg-pink-600 text-white font-semibold py-2 px-3 rounded-sm transition-colors duration-200 flex items-center gap-1">
           <Invertocat/> Nossa Página
-        </button>
+        </a>
       </div>
     </div>
   );
