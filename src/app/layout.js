@@ -18,10 +18,10 @@ export default function RootLayout({ children }) {
     <html lang="pt-br">
       <body className={`${montserrat.variable} antialiased overflow-hidden`}>
         <Header />
-        <div className="container-geral flex relative z-10">
+        <div className="flex relative z-10 h-screen">
           <Sidebar />
-          <main className="flex flex-1 items-center justify-center">
-            <div className="bg-zinc-200 p-5 rounded-sm dark:bg-gray-600 w-6xl">
+          <main className="flex flex-1 overflow-y-auto h-full">
+            <div className="bg-zinc-200 p-5 rounded-sm mx-auto my-7 dark:bg-gray-600 w-5/6 h-5/6">
               {children}
             </div>
           </main>
