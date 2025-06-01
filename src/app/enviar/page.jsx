@@ -17,10 +17,19 @@ const option = ["CPF", "CNH"];
 export default function Enviar() {
   const [fileName, setFileName] = useState("");
   const [docValue, setDocValue] = useState("");
+  const [image, setImage] = useState("");
 
   function handleFile(e) {
     const file = e.target.files?.[0];
     setFileName(file.name);
+
+    if (e.target.files && e.target.files[0]) {
+      setImage(URL.createObjectURL(e.target.files[0]));
+    }
+  }
+
+  function onImageChange(e) {
+
   }
 
   return (
@@ -58,7 +67,8 @@ export default function Enviar() {
         </div>
       </div>
       <div className="flex gap-2 h-96">
-        <div className="flex flex-col bg-indigo-200 flex-1 rounded-sm justify-end items-end h-full">
+        <div className="flex flex-col bg-indigo-200 relative flex-1 rounded-sm justify-end items-end h-full">
+          <img src={image} alt="" className="w-5/6 mx-auto" />
           <div className="flex w-full justify-center items-baseline py-3 gap-1">
             <div
               className="flex items-center justify-center p-1 bg-zinc-500 w-fit h-fit rounded-full cursor-pointer active:bg-zinc-600">
@@ -83,6 +93,7 @@ export default function Enviar() {
               <History color="white" size="20" />
             </div>
           </div>
+
         </div>
         <div className="flex flex-col bg-gray-100 flex-1 rounded-sm h-full">
           <div className="w-full bg-zinc-50 h-8 rounded-tl-sm rounded-tr-sm border-1 border-zinc-400"></div>
