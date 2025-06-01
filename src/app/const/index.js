@@ -61,33 +61,45 @@ const erros = [
 export const membros = [
         {
             nome: "André Luiz",
-            funcao: "Front-end / UX-UI",
-            imagem: "https://images.icon-icons.com/2483/PNG/512/user_icon_149851.png"
+            funcao: "Front-end | Back-end | Gestão",
+            imagem: "group_image/andre.jpeg",
+            github: "http:://github.com/deezinn",
+            linkedin: "",
+        },
+        {
+            nome: "Icaro",
+            funcao: "A preencher",
+            imagem: "group_image/icaro.jpeg",
+            github: "",
+            linkedin: "",
         },
         {
             nome: "Jõao",
-            funcao: "Back-end / DevOps",
-            imagem: "https://images.icon-icons.com/2483/PNG/512/user_icon_149851.png"
+            funcao: "A preencher",
+            imagem: "group_image/joao.jpeg",
+            github: "",
+            linkedin: "",
         },
         {
-            nome: "Fernando",
-            funcao: "Back-end / DevOps",
-            imagem: "https://images.icon-icons.com/2483/PNG/512/user_icon_149851.png"
+            nome: "Lucas",
+            funcao: "A prencher",
+            imagem: "group_image/lucas.jpeg",
+            github: "",
+            linkedin: "",
         },
         {
-            nome: "Luciano",
-            funcao: "Back-end / DevOps",
-            imagem: "https://images.icon-icons.com/2483/PNG/512/user_icon_149851.png"
+            nome: "Matheus",
+            funcao: "A preencher",
+            imagem: "group_image/matheus.jpeg",
+            github: "",
+            linkedin: "",
         },
         {
-            nome: "Luciano",
-            funcao: "Back-end / DevOps",
-            imagem: "https://images.icon-icons.com/2483/PNG/512/user_icon_149851.png"
-        },
-        {
-            nome: "Luciano",
-            funcao: "Back-end / DevOps",
-            imagem: "https://images.icon-icons.com/2483/PNG/512/user_icon_149851.png"
+            nome: "Neto",
+            funcao: "A preencher",
+            imagem: "group_image/neto.jpeg",
+            github: "",
+            linkedin: "",
         }
     ];
 
