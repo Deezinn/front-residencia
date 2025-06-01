@@ -8,7 +8,7 @@ import {
   ZoomIn,
   ZoomOut,
   ArrowLeft,
-  ArrowRight,
+  ArrowRight
 } from "lucide-react";
 import { useEffect, useState } from "react";
 
@@ -29,9 +29,11 @@ export default function Enviar() {
         styles={`w-full`}
         disabled="Selecione o tipo de arquivo"
         options={option}
-        docValue={setDocValue}
+        setValue={setDocValue}
+        value={docValue}
       />
-      <div className="flex items-center justify-center p-4 border-2 border-dashed border-pink-300 my-3 rounded-sm flex-col gap-3">
+      <div
+        className="flex items-center justify-center p-4 border-2 border-dashed border-pink-300 my-3 rounded-sm flex-col gap-3">
         <CloudUpload className="h-1/4 w-1/12" />
         <h1 className="text-3xl font-bold">Envie um arquivo</h1>
         <span>PNG, PDF, JPG. Tamanho máximo 50MB</span>
@@ -58,21 +60,26 @@ export default function Enviar() {
       <div className="flex gap-2 h-96">
         <div className="flex flex-col bg-indigo-200 flex-1 rounded-sm justify-end items-end h-full">
           <div className="flex w-full justify-center items-baseline py-3 gap-1">
-            <div className="flex items-center justify-center p-1 bg-zinc-500 w-fit h-fit rounded-full cursor-pointer active:bg-zinc-600">
+            <div
+              className="flex items-center justify-center p-1 bg-zinc-500 w-fit h-fit rounded-full cursor-pointer active:bg-zinc-600">
               <RotateCcw color="white" size="20" />
             </div>
-            <div className="flex items-center justify-center p-1 bg-zinc-500 w-fit h-fit rounded-full cursor-pointer active:bg-zinc-600">
+            <div
+              className="flex items-center justify-center p-1 bg-zinc-500 w-fit h-fit rounded-full cursor-pointer active:bg-zinc-600">
               <ZoomOut size="25" color="white" />
             </div>
-            <div className="flex items-center justify-center gap-1 p-1 bg-zinc-500 w-fit h-fit rounded-full select-none">
+            <div
+              className="flex items-center justify-center gap-1 p-1 bg-zinc-500 w-fit h-fit rounded-full select-none">
               <ArrowLeft color="white" className="cursor-pointer" />
               <span className="text-white">1/0</span>
               <ArrowRight color="white" className="cursor-pointer" />
             </div>
-            <div className="flex items-center justify-center p-1 bg-zinc-500 w-fit h-fit rounded-full cursor-pointer active:bg-zinc-600">
+            <div
+              className="flex items-center justify-center p-1 bg-zinc-500 w-fit h-fit rounded-full cursor-pointer active:bg-zinc-600">
               <ZoomIn size="25" color="white" />
             </div>
-            <div className="flex items-center justify-center p-1 bg-zinc-500 w-fit h-fit rounded-full cursor-pointer active:bg-zinc-600">
+            <div
+              className="flex items-center justify-center p-1 bg-zinc-500 w-fit h-fit rounded-full cursor-pointer active:bg-zinc-600">
               <History color="white" size="20" />
             </div>
           </div>
