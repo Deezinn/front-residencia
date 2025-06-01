@@ -57,4 +57,39 @@ const erros = [
   },
 ];
 
+
+export const membros = [
+        {
+            nome: "André Luiz",
+            funcao: "Front-end / UX-UI",
+            imagem: "https://images.icon-icons.com/2483/PNG/512/user_icon_149851.png"
+        },
+        {
+            nome: "Jõao",
+            funcao: "Back-end / DevOps",
+            imagem: "https://images.icon-icons.com/2483/PNG/512/user_icon_149851.png"
+        },
+        {
+            nome: "Fernando",
+            funcao: "Back-end / DevOps",
+            imagem: "https://images.icon-icons.com/2483/PNG/512/user_icon_149851.png"
+        },
+        {
+            nome: "Luciano",
+            funcao: "Back-end / DevOps",
+            imagem: "https://images.icon-icons.com/2483/PNG/512/user_icon_149851.png"
+        },
+        {
+            nome: "Luciano",
+            funcao: "Back-end / DevOps",
+            imagem: "https://images.icon-icons.com/2483/PNG/512/user_icon_149851.png"
+        },
+        {
+            nome: "Luciano",
+            funcao: "Back-end / DevOps",
+            imagem: "https://images.icon-icons.com/2483/PNG/512/user_icon_149851.png"
+        }
+    ];
+
 export default erros;
+
