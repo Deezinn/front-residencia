@@ -12,8 +12,8 @@ export default function Button() {
         onClick={() => setActiveButton("painel")}
         className={`w-55 h-14 flex items-center justify-items-start rounded-sm cursor-pointer ${
           activeButton === "painel"
-            ? "bg-fuchsia-200 text-fuchsia-500 hover:bg-[#f3bffc]"
-            : "dark:bg-side-cont-dark dark:text-zinc-100 text-zinc-500"
+            ? "bg-fuchsia-200 text-fuchsia-500 hover:bg-[#f3bffc] transition-colors duration-300"
+            : "dark:bg-side-cont-dark dark:text-zinc-100 text-zinc-500 transition-colors duration-300"
         }`}
       >
         <span className="ml-5 font-sans flex items-center justify-items-start">
@@ -26,8 +26,8 @@ export default function Button() {
         onClick={() => setActiveButton("enviar")}
         className={`w-55 h-14 flex items-center justify-items-start rounded-sm cursor-pointer ${
           activeButton === "enviar"
-            ? "bg-fuchsia-200 text-fuchsia-500 hover:bg-[#f3bffc]"
-            : "dark:bg-side-cont-dark dark:text-zinc-100 text-zinc-500"
+            ? "bg-fuchsia-200 text-fuchsia-500 hover:bg-[#f3bffc] transition-colors duration-300"
+            : "dark:bg-side-cont-dark dark:text-zinc-100 text-zinc-500 transition-colors duration-300"
         }`}
       >
         <span className="ml-5 font-sans flex items-center justify-items-start">
@@ -40,8 +40,8 @@ export default function Button() {
         onClick={() => setActiveButton("relatorio")}
         className={`w-55 h-14 flex items-center justify-items-start rounded-sm cursor-pointer ${
           activeButton === "relatorio"
-            ? "bg-fuchsia-200 text-fuchsia-500 hover:bg-[#f3bffc]"
-            : "dark:bg-side-cont-dark dark:text-zinc-100 text-zinc-500"
+            ? "bg-fuchsia-200 text-fuchsia-500 hover:bg-[#f3bffc] transition-colors duration-300"
+            : "dark:bg-side-cont-dark dark:text-zinc-100 text-zinc-500 transition-colors duration-300"
         }`}
       >
         <span className="ml-5 font-sans flex items-center justify-items-start">

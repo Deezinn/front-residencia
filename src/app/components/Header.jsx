@@ -9,7 +9,10 @@ export default function Header() {
         alt="di2win-logo"
         className="w-40"
       />
-      <Link href="/equipe" className="flex justify-center items-center bg-pink-500 p-2 rounded-sm gap-2 pr-4 pl-4 cursor-pointer active:translate-y-0.5 ease-in-out duration-100">
+      <Link
+        href="/equipe"
+        className="flex justify-center items-center bg-pink-500 p-2 rounded-sm gap-2 pr-4 pl-4 cursor-pointer active:translate-y-0.5 ease-in-out duration-300 hover:bg-pink-600 color-transition"
+      >
         <UserRound color="white" />
         <h3 className="text-white select-none">Equipe 1</h3>
       </Link>
