@@ -12,7 +12,7 @@ export default function Pesquisa({ searchValue, setSearch }) {
         type="text"
         name="search-bar"
         className="outline-none bg-zinc-100 text-zinc-900 flex-1"
-        placeholder="Pesquisar"
+        placeholder="Pesquisar modelo"
         value={searchValue}
         onChange={(e) => setSearch(e.target.value)}
       />

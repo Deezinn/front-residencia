@@ -68,7 +68,7 @@ export default function Enviar() {
       </div>
       <div className="flex gap-2 h-96">
         <div className="flex flex-col bg-indigo-200 relative flex-1 rounded-sm justify-end items-end h-full">
-          <img src={image} alt="" className="w-5/6 mx-auto" />
+          {image && <img src={image} alt="imagem-enviada" className="w-5/6 mx-auto" />}
           <div className="flex w-full justify-center items-baseline py-3 gap-1">
             <div
               className="flex items-center justify-center p-1 bg-zinc-500 w-fit h-fit rounded-full cursor-pointer active:bg-zinc-600">
