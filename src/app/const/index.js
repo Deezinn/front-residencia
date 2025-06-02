@@ -71,6 +71,22 @@ export const erros = [
     modelo: "cnh",
     mensagem: "Internal Server Error",
   },
+  {
+    id: 10,
+    codigo: 500,
+    guid: "340-22052025-18257-83686fef-b1e9-44ac-b1e6-6dafe5cbca57",
+    dataHora: "14/04/2025 21:22:30",
+    modelo: "cnh",
+    mensagem: "Internal Server Error",
+  },
+  {
+    id: 11,
+    codigo: 500,
+    guid: "340-22052025-18257-83686fef-b1e9-44ac-b1e6-6dafe5cbca57",
+    dataHora: "14/04/2025 21:22:30",
+    modelo: "cnh",
+    mensagem: "Internal Server Error",
+  },
 ];
 
 // export const erroData = [...new Set(erros.map(erro => erro.dataHora.split(" ")[0].trim()))];
