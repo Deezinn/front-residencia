@@ -12,7 +12,7 @@ import {
 } from "lucide-react";
 import { useEffect, useState } from "react";
 
-const option = ["CPF", "CNH"];
+const option = ["CPF", "CNH", "RG"];
 
 export default function Enviar() {
   const [fileName, setFileName] = useState("");
