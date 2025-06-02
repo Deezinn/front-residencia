@@ -3,7 +3,7 @@ import axios from "axios";
 const url = "http://localhost:8000";
 
 export const getErrors = async ({ id }) => {
-  const res = await axios.get(`${url}/api/documents/${id}`);
+  const res = await axios.get(`${url}/api/documents/`);
   return res.data;
 };
 

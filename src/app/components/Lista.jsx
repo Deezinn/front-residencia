@@ -1,6 +1,8 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { erros } from "../const/index";
+import { getErrors } from "@/services/api";
 
 function ListEmpty() {
   return (
@@ -13,13 +15,13 @@ function ListEmpty() {
 }
 
 export default function Lista({ search, data, status }) {
-  const listagem = erros.filter((erro) => {
+  const listagem = data.filter((error) => {
     const porPesquisa = search
-      ? erro.modelo.toLowerCase().includes(search.toLowerCase())
+      ? error.modelo.toLowerCase().includes(search.toLowerCase())
       : true;
-    const porStatus = status ? erro.codigo.toString().includes(status) : true;
+    const porStatus = status ? error.codigo.toString().includes(status) : true;
     const porData = data
-      ? erro.dataHora.split(" ")[0].split("/").reverse().join("-") === data
+      ? error.dataHora.split(" ")[0].split("/").reverse().join("-") === data
       : true;
 
     return porPesquisa && porStatus && porData;

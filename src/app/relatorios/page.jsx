@@ -5,7 +5,7 @@ import Dropdown from "../../app/components/Dropdown";
 import { Calendar } from "lucide-react";
 import { Bug } from "lucide-react";
 import Pesquisa from "../../app/components/Pesquisa";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { errosDrop, erros, erroData } from "@/app/const";
 
 const datas = ["10-04-2025", "04-10-2024", "29-01-2025", "14/04/2025"];
@@ -14,6 +14,20 @@ export default function Home() {
   const [search, setSearch] = useState("");
   const [status, setStatus] = useState();
   const [data, setData] = useState("");
+  const [dados, setDados] = useState([]);
+
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const data = await getErrors();
+        setDados(data);
+      } catch (err) {
+        console.error(err);
+      }
+    }
+
+    fetchData();
+  });
 
   return (
     <div className="">
