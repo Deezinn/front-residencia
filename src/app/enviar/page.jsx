@@ -11,6 +11,7 @@ import {
   ArrowRight
 } from "lucide-react";
 import { useEffect, useState } from "react";
+import { postDocument } from "@/services/api";
 
 const option = ["CPF", "CNH"];
 
@@ -18,18 +19,16 @@ export default function Enviar() {
   const [fileName, setFileName] = useState("");
   const [docValue, setDocValue] = useState("");
   const [image, setImage] = useState("");
+  const [file, setFile] = useState(null);
 
   function handleFile(e) {
     const file = e.target.files?.[0];
     setFileName(file.name);
+    setFile(file);
 
     if (e.target.files && e.target.files[0]) {
       setImage(URL.createObjectURL(e.target.files[0]));
     }
-  }
-
-  function onImageChange(e) {
-
   }
 
   return (
@@ -59,16 +58,22 @@ export default function Enviar() {
             htmlFor="img"
             className={`px-2 py-1 rounded-sm text-zinc-100 ${fileName ? "bg-pink-500" : "bg-zinc-400"} ${docValue === "" ? "cursor-not-allowed opacity-70" : "cursor-pointer hover:bg-zinc-500"}`}
           >
-            {fileName ? "Trocar arquivo" : "Enviar arquivo"}
+            {fileName ? "Trocar arquivo" : "Escolher arquivo"}
           </label>
           <label htmlFor="file">
             {fileName ? fileName : "Nenhum arquivo selecionado"}
           </label>
         </div>
+        <button disabled={image === ""}
+                className={`px-2 py-1 rounded-sm text-zinc-100 ${fileName ? "bg-pink-500" : "bg-zinc-400"} ${image === "" ? "cursor-not-allowed opacity-70" : "cursor-pointer hover:bg-zinc-500"}`}
+                onClick={() => postDocument(file, docValue)}>Enviar
+        </button>
       </div>
       <div className="flex gap-2 h-96">
         <div className="flex flex-col bg-indigo-200 relative flex-1 rounded-sm justify-end items-end h-full">
-          {image && <img src={image} alt="imagem-enviada" className="w-5/6 mx-auto" />}
+          {image && (
+            <img src={image} alt="imagem-enviada" className="w-5/6 mx-auto" />
+          )}
           <div className="flex w-full justify-center items-baseline py-3 gap-1">
             <div
               className="flex items-center justify-center p-1 bg-zinc-500 w-fit h-fit rounded-full cursor-pointer active:bg-zinc-600">
@@ -93,7 +98,6 @@ export default function Enviar() {
               <History color="white" size="20" />
             </div>
           </div>
-
         </div>
         <div className="flex flex-col bg-gray-100 flex-1 rounded-sm h-full">
           <div className="w-full bg-zinc-50 h-8 rounded-tl-sm rounded-tr-sm border-1 border-zinc-400"></div>

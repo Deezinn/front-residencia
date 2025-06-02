@@ -5,16 +5,22 @@ import { erros } from "../const/index";
 function ListEmpty() {
   return (
     <div className="w-full bg-zinc-300">
-      <h1 className="text-3xl text-black font-bold">Não foi possível encontrar nenhum registro.</h1>
+      <h1 className="text-3xl text-black font-bold">
+        Não foi possível encontrar nenhum registro.
+      </h1>
     </div>
   );
 }
 
 export default function Lista({ search, data, status }) {
-  const listagem = erros.filter(erro => {
-    const porPesquisa = search ? erro.modelo.toLowerCase().includes(search.toLowerCase()) : true;
+  const listagem = erros.filter((erro) => {
+    const porPesquisa = search
+      ? erro.modelo.toLowerCase().includes(search.toLowerCase())
+      : true;
     const porStatus = status ? erro.codigo.toString().includes(status) : true;
-    const porData = data ? erro.dataHora.split(" ")[0].split("/").reverse().join("-") === data : true;
+    const porData = data
+      ? erro.dataHora.split(" ")[0].split("/").reverse().join("-") === data
+      : true;
 
     return porPesquisa && porStatus && porData;
   });
@@ -35,11 +41,11 @@ export default function Lista({ search, data, status }) {
 
   return (
     <div>
-      {listErrors.length < 1 ? (<ListEmpty />) :
-        (
-          <table
-            className="block border-2 border-black border-separate border-spacing-0 rounded-md overflow-auto w-full min-h-fit max-h-[470px]">
-            <thead className="sticky top-0 bg-pink-500 dark:bg-pink-600 shadow-sm/20">
+      {listErrors.length < 1 ? (
+        <ListEmpty />
+      ) : (
+        <table className="block border-2 border-black border-separate border-spacing-0 rounded-md overflow-auto w-full min-h-fit max-h-[470px]">
+          <thead className="sticky top-0 bg-pink-500 dark:bg-pink-600 shadow-sm/20">
             <tr className="border-b-2 text-gray-100 dark:text-gray-900 border-black">
               <th className="px-3 py-2">ID</th>
               <th className="px-3 py-2">Código</th>
@@ -48,10 +54,10 @@ export default function Lista({ search, data, status }) {
               <th className="px-3 py-2">Modelo</th>
               <th className="px-3 py-2">Mensagem</th>
             </tr>
-            </thead>
-            <tbody>{listErrors}</tbody>
-          </table>
-        )}
+          </thead>
+          <tbody>{listErrors}</tbody>
+        </table>
+      )}
     </div>
   );
 }

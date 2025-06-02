@@ -18,17 +18,28 @@ export default function Home() {
   return (
     <div className="">
       <div className="my-2 flex gap-1">
-        <input type="date" name="input-data" id="input-data"
-               className="bg-zinc-100 rounded-md px-1 border-2 border-zinc-500 text-zinc-800 outline-none"
-               value={search}
-               onChange={(e) => setData(e.target.value)} />
+        <input
+          type="date"
+          name="input-data"
+          id="input-data"
+          className="bg-zinc-100 rounded-md px-1 border-2 border-zinc-500 text-zinc-800 outline-none"
+          value={search}
+          onChange={(e) => setData(e.target.value)}
+        />
         <button
           className="bg-zinc-100 rounded-md cursor-pointer hover:shadow-sm/20 active:translate-y-0.5 transition-all text-black px-2 border-2 border-zinc-500"
-          onClick={() => setData("")}>Limpar data
+          onClick={() => setData("")}
+        >
+          Limpar data
         </button>
-        <Dropdown disabled="Status code" options={errosDrop} nome="erro" icon={<Bug color="#f6339a" />}
-                  setValue={setStatus}
-                  value={status} />
+        <Dropdown
+          disabled="Status code"
+          options={errosDrop}
+          nome="erro"
+          icon={<Bug color="#f6339a" />}
+          setValue={setStatus}
+          value={status}
+        />
         <Pesquisa setSearch={setSearch} searchValue={search} />
       </div>
       <Lista search={search} status={status} data={data} />
